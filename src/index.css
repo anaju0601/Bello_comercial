@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@keyframes process-shine {
+  0% {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(220%);
+    opacity: 0;
+  }
+}
+
+.animate-process-shine {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.9),
+    transparent
+  );
+
+  animation: process-shine .9s ease-out;
+}

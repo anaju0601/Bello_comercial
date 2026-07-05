@@ -1,0 +1,26 @@
+:root {
+  /* ===== COLORS ===== */
+
+  --color-primary: #005CAA;
+  --color-primary-dark: #004B8C;
+
+  --color-white: #FFFFFF;
+
+  --color-text: #1E293B;
+  --color-text-light: #64748B;
+
+  --color-border: #E2E8F0;
+
+  --color-background: #FFFFFF;
+  --color-surface: #F8FAFC;
+
+  /* ===== RADIUS ===== */
+
+  --radius-sm: .5rem;
+  --radius-md: 1rem;
+  --radius-lg: 2rem;
+
+  /* ===== TRANSITIONS ===== */
+
+  --transition: .3s ease;
+}

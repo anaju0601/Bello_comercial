@@ -1,0 +1,39 @@
+.process-shine {
+  position: absolute;
+  top: -2px;
+  left: -60px;
+
+  width: 60px;
+  height: 7px;
+
+  border-radius: 999px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.95),
+    transparent
+  );
+
+  filter: blur(2px);
+
+  animation: process-shine .8s ease-out forwards;
+}
+
+@keyframes process-shine {
+
+  from {
+    transform: translateX(0);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(1500px);
+    opacity: 0;
+  }
+
+}
