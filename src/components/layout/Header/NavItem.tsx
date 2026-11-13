@@ -1,17 +1,12 @@
-import type { ReactNode } from "react";
-
-interface NavItemProps {
-  href: string;
-  children: ReactNode;
-}
+import type { ComponentPropsWithoutRef } from "react";
 
 export default function NavItem({
-  href,
   children,
-}: NavItemProps) {
+  ...props
+}: ComponentPropsWithoutRef<"a">) {
   return (
     <a
-      href={href}
+      {...props}
       className="text-sm font-medium text-slate-700 transition-colors hover:text-[#005CAA]"
     >
       {children}
